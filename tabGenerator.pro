@@ -5,6 +5,8 @@
 #-------------------------------------------------
 
 QT       += core gui
+CONFIG += c++14
+QMAKE_CXXFLAGS += -Weffc++
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -25,10 +27,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        tabgeneratormain.cpp
+        tabgeneratormain.cpp \
+    studenttracker.cpp
 
 HEADERS += \
-        tabgeneratormain.h
+        tabgeneratormain.h \
+    studenttracker.h
 
 FORMS += \
         tabgeneratormain.ui
